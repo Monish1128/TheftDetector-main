@@ -1,0 +1,14 @@
+Motion detected at Tue Dec 19 20:57:47 2023 - Threshold: 5 Time Threshold: 10
+Motion detected at Tue Dec 19 20:57:58 2023 - Threshold: 5 Time Threshold: 10
+Motion detected at Tue Dec 19 20:58:21 2023 - Threshold: 5 Time Threshold: 10
+Motion detected at Tue Dec 19 20:58:32 2023 - Threshold: 5 Time Threshold: 10
+Motion detected at Tue Dec 19 20:58:42 2023 - Threshold: 5 Time Threshold: 10
+Motion detected at Tue Dec 19 21:17:17 2023 - Threshold: 5 Time Threshold: 10
+Motion detected at Tue Dec 19 22:32:00 2023 - Threshold: 5 Time Threshold: 10
+Motion detected at Tue Dec 19 22:39:03 2023 - Threshold: 5 Time Threshold: 10
+Motion detected at Tue Dec 19 22:39:14 2023 - Threshold: 5 Time Threshold: 10
+Motion detected at Tue Dec 19 22:39:32 2023 - Threshold: 5 Time Threshold: 10
+Motion detected at Tue Dec 19 22:43:30 2023 - Threshold: 5 Time Threshold: 10
+Motion detected at Tue Dec 19 22:43:45 2023 - Threshold: 5 Time Threshold: 10
+Motion detected at Tue Dec 19 23:06:04 2023 - Threshold: 5 Time Threshold: 10
+Motion detected at Tue Dec 19 23:06:32 2023 - Threshold: 5 Time Threshold: 10

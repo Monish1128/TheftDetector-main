@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion Detection Feed</title>
+    <style>
+        #video-stream {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Motion Detection Feed</h1>
+    <video id="video-stream" autoplay controls></video>
+    <script>
+        const video = document.getElementById('video-stream');
+        const motionThreshold = {{ motion_threshold }};
+        const useTimeThreshold = {{ use_time_threshold }};
+        const as

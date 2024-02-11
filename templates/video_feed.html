@@ -1,0 +1,60 @@
+<!-- video_feed.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Feed</title>
+    <style>
+        #select_region {
+            position: relative;
+        }
+
+        #video {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Live Video Feed</h1>
+    <div id="select_region">
+        <img src="{{ url_for('video_feed', motion_threshold=motion_threshold, use_time_threshold=use_time_threshold, as_motion_threshold=as_motion_threshold, time_threshold=time_threshold) }}" id="video" width="640" height="480">
+        <div id="overlay" style="position:absolute;border:2px solid rgba(255,0,0,0.5);"></div>
+    </div>
+
+    <script>
+        var x1, y1, x2, y2;
+        var selecting = false;
+
+        document.getElementById('select_region').addEventListener('mousedown', function(e) {
+            if (!selecting) {
+                x1 = e.offsetX;
+                y1 = e.offsetY;
+                selecting = true;
+            }
+        });
+
+        document.getElementById('select_region').addEventListener('mousemove', function(e) {
+            if (selecting) {
+                var overlay = document.getElementById('overlay');
+                overlay.style.left = x1 + 'px';
+                overlay.style.top = y1 + 'px';
+                overlay.style.width = (e.offsetX - x1) + 'px';
+                overlay.style.height = (e.offsetY - y1) + 'px';
+                overlay.style.display = 'block';
+            }
+        });
+
+        document.getElementById('select_region').addEventListener('mouseup', function(e) {
+            if (selecting) {
+                x2 = e.offsetX;
+                y2 = e.offsetY;
+                selecting = false;
+            }
+        });
+    </script>
+</body>
+</html>

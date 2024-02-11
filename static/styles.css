@@ -1,0 +1,47 @@
+Add your custom styles here
+.full-height {
+    height: 100vh;
+  }
+  
+  .jumbotron {
+    border-radius: 15px;
+  }
+  
+  .list-group-item {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+  }
+  
+  .list-group-item:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    color: #0056b3;
+  }
+  /* styles.css */
+
+body {
+    background-color: #f0f0f0;
+  }
+  
+  .menu-container {
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-container .list-group-item {
+    background-color: transparent;
+    color: white;
+    border: none;
+  }
+  
+  .menu-container .list-group-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  

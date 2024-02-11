@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Theft Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Theft Detection</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('in_out_web') }}">In-Out Detection</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('noise_web') }}">Motion Detection</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('rect_noise_web') }}">Motion Detection with Rectangles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('record_web') }}">Record Video</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('find_motion_web') }}">Find Motion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to Theft Detection System</h1>
+      <p class="lead">Select an option below to proceed:</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="card bg-dark text-white">
+          <div class="card-body">
+            <h5 class="card-title">Detection Options</h5>
+            <a href="{{ url_for('in_out_web') }}" class="btn btn-primary btn-block mb-2">In-Out Detection</a>
+            <a href="{{ url_for('noise_web') }}" class="btn btn-primary btn-block mb-2">Motion Detection</a>
+            <a href="{{ url_for('rect_noise_web') }}" class="btn btn-primary btn-block mb-2">Motion Detection with Rectangles</a>
+            <a href="{{ url_for('record_web') }}" class="btn btn-primary btn-block mb-2">Record Video</a>
+            <a href="{{ url_for('find_motion_web') }}" class="btn btn-primary btn-block mb-2">Find Motion</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>

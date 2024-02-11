@@ -1,0 +1,28 @@
+<!-- motion_detection.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion Detection</title>
+</head>
+<body>
+    <h1>Motion Detection</h1>
+    <form action="/start_detection_feed" method="POST">
+        <label for="as_motion_threshold">Movement Threshold:</label>
+        <input type="number" id="as_motion_threshold" name="as_motion_threshold" required><br><br>
+
+        <label for="time_threshold">Time Threshold:</label>
+        <input type="number" id="time_threshold" name="time_threshold" required><br><br>
+
+        <label for="use_as_threshold">Use Movement Threshold:</label>
+        <input type="checkbox" id="use_as_threshold" name="use_as_threshold" value="true"><br><br>
+
+        <label for="use_time_threshold">Use Time Threshold:</label>
+        <input type="checkbox" id="use_time_threshold" name="use_time_threshold" value="true"><br><br>
+
+        <input type="submit" value="Start Detection">
+    </form>
+</body>
+</html

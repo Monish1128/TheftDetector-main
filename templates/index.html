@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theft Detection System</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+
+  <header>
+    <!-- Your header content goes here -->
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">Your Brand</a>
+    </nav>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Add your image here -->
+        <img src="{{ url_for('static', filename='path_to_your_image.jpg') }}" alt="Your Image" class="img-fluid">
+      </div>
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <div class="menu-container">
+          <h1 class="display-4 text-white">Welcome to Theft Detection System</h1>
+          <p class="lead text-white">Select an option below to proceed:</p>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">In-Out Detection</a>
+            <a href="#" class="list-group-item list-group-item-action">Motion Detection</a>
+            <a href="#" class="list-group-item list-group-item-action">Record Video</a>
+            <a href="#" class="list-group-item list-group-item-action">Find Motion</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
